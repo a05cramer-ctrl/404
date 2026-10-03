@@ -1,0 +1,390 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>404</title>
+<meta name="description" content="the page you're looking for doesn't exist. the coin does. $404 on Solana.">
+<meta property="og:title" content="404"><meta property="og:description" content="the page you're looking for doesn't exist. the coin does.">
+<meta property="og:image" content="og.jpg"><meta name="twitter:card" content="summary_large_image"><meta name="theme-color" content="#000000"><link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=JetBrains+Mono:wght@400;500;700&display=swap">
+<style>:root{--bg:#000;--fg:#fff;--dim:rgba(255,255,255,.5);--line:rgba(255,255,255,.22);--red:#ff3b3b;--grn:#3dff8b;--cy:#33e6ff;--mg:#ff3be0;
+--ui:"JetBrains Mono",ui-monospace,SFMono-Regular,Menlo,Consolas,monospace;--hd:"Archivo Black",Impact,"Arial Black",sans-serif}
+[hidden]{display:none!important}
+*{box-sizing:border-box}
+html{background:#000;scroll-behavior:smooth}
+html,body{margin:0;overflow-x:clip}
+body{background:var(--bg);color:var(--fg);font-family:var(--ui);-webkit-font-smoothing:antialiased;-webkit-tap-highlight-color:transparent}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap;margin:-1px}
+a{color:inherit}
+.hud{position:fixed;z-index:30;top:0;left:0;right:0;display:flex;align-items:center;justify-content:space-between;gap:10px;padding:max(14px,env(safe-area-inset-top)) 16px 0;pointer-events:none}
+.hud>*{pointer-events:auto}
+.brand{display:flex;align-items:center;gap:10px;text-decoration:none}
+.brand img{width:34px;height:34px;border-radius:8px;box-shadow:0 0 0 1px var(--line)}
+.bw{font-family:var(--hd);font-size:18px;letter-spacing:.02em}
+.acts{display:flex;align-items:center;gap:8px}
+.ib{width:38px;height:38px;display:grid;place-items:center;border:1px solid var(--line);border-radius:6px;background:rgba(0,0,0,.6);color:#fff;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px)}
+.ib svg{width:18px;height:18px}
+.ib:hover,.ib:focus-visible,.chip:hover{border-color:#fff;outline:none}
+.buy{height:38px;display:inline-flex;align-items:center;gap:7px;padding:0 16px;border-radius:6px;background:#fff;color:#000;text-decoration:none;font:700 13px var(--ui);text-transform:uppercase;white-space:nowrap;box-shadow:2px 0 0 var(--cy),-2px 0 0 var(--mg);transition:transform .12s}
+.buy:hover,.buy:focus-visible{transform:translate(1px,-1px);outline:none}
+.hero{position:relative;height:100svh;min-height:520px;overflow:hidden;cursor:crosshair;touch-action:manipulation}
+#gl,#src{position:absolute;inset:0;width:100%;height:100%;display:block}
+#src{display:none}
+body.nogl #gl{display:none}body.nogl #src{display:block}
+.hero-txt{position:absolute;left:0;right:0;bottom:calc(64px + env(safe-area-inset-bottom));text-align:center;padding:0 16px;pointer-events:none}
+.tagline{margin:0;font-size:clamp(14px,2.2vw,20px);line-height:1.5;color:#fff;text-shadow:0 0 12px #000,0 0 3px #000}
+.tagline b{background:#fff;color:#000;padding:0 6px}
+.hint{margin:10px 0 0;font-size:12px;color:var(--dim);letter-spacing:.04em}
+.down{position:absolute;left:50%;bottom:calc(18px + env(safe-area-inset-bottom));transform:translateX(-50%);font-size:12px;color:var(--dim);text-decoration:none;letter-spacing:.08em;animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{50%{transform:translate(-50%,5px)}}
+.log{padding:12vh 16px 10vh;border-top:1px solid var(--line)}
+.log-in{max-width:880px;margin:0 auto}
+.log-h{font-size:13px;letter-spacing:.08em;text-transform:uppercase;margin:0 0 22px;display:flex;gap:10px;flex-wrap:wrap}
+.dim{color:var(--dim)}
+.rows{list-style:none;margin:0;padding:0;border-top:1px solid var(--line)}
+.row{display:grid;grid-template-columns:78px minmax(0,1fr) 42px minmax(0,1.3fr);gap:12px;align-items:baseline;padding:13px 6px;border-bottom:1px solid var(--line);font-size:clamp(12px,1.9vw,15px);opacity:0;transform:translateY(8px);transition:opacity .35s,transform .35s,background .12s,color .12s;text-decoration:none;color:#fff}
+.row.in{opacity:1;transform:none}
+.row .t{color:var(--dim)}
+.row .p b{font-weight:700}
+.row .s{font-weight:700}
+.row.e .s{color:var(--red)}
+.row.o .s{color:var(--grn)}
+.row .n{color:var(--dim)}
+a.row.o{cursor:pointer}
+a.row.o:hover,a.row.o:focus-visible{background:#fff;color:#000;outline:none}
+a.row.o:hover .t,a.row.o:hover .n,a.row.o:focus-visible .t,a.row.o:focus-visible .n{color:#000}
+a.row.o:hover .s{color:#006b2c}
+.row.e:hover{background:rgba(255,59,59,.1)}
+.foot{margin-top:40px;display:flex;align-items:center;justify-content:space-between;gap:14px;flex-wrap:wrap}
+.chip{height:36px;display:inline-flex;align-items:center;gap:9px;padding:0 12px;max-width:100%;border:1px solid var(--line);border-radius:6px;background:#000;color:#fff;font:500 12.5px var(--ui);cursor:pointer}
+.chip .k{background:#fff;color:#000;padding:1px 5px;font-weight:700;font-size:11px}
+#caTxt{overflow:hidden;text-overflow:ellipsis;white-space:nowrap}
+.fine{margin:0;font-size:11.5px;color:var(--dim)}
+.wins{position:fixed;inset:0;z-index:40;pointer-events:none}
+.win{position:absolute;width:min(300px,86vw);background:#000;border:1px solid #fff;box-shadow:5px 5px 0 rgba(255,255,255,.25),0 0 0 1px #000;pointer-events:auto;font-size:13px;touch-action:none;animation:pop .14s ease-out}
+@keyframes pop{from{transform:scale(.8);opacity:0}}
+.win .tb{display:flex;align-items:center;justify-content:space-between;background:#fff;color:#000;padding:5px 6px 5px 10px;font-weight:700;font-size:12px;cursor:grab;user-select:none}
+.win .x{width:20px;height:20px;border:1px solid #000;background:#fff;color:#000;font:700 12px var(--ui);line-height:1;cursor:pointer;padding:0}
+.win .bd{padding:14px 12px 12px;display:flex;gap:12px;align-items:flex-start}
+.win .ic{flex:none;width:30px;height:30px;border:2px solid var(--red);color:var(--red);display:grid;place-items:center;font-weight:700;border-radius:50%}
+.win .msg{line-height:1.45}
+.win .msg small{display:block;color:var(--dim);margin-top:4px}
+.win .ok{display:block;margin:0 12px 12px auto;min-width:74px;height:28px;border:1px solid #fff;background:#000;color:#fff;font:700 12px var(--ui);cursor:pointer}
+.win .ok:hover,.win .ok:focus-visible{background:#fff;color:#000;outline:none}
+.win.dying{transition:transform .5s cubic-bezier(.6,-.3,.4,1.3),opacity .5s;opacity:0}
+.toast{position:fixed;z-index:50;left:50%;bottom:calc(24px + env(safe-area-inset-bottom));transform:translate(-50%,10px);padding:10px 16px;border:1px solid #fff;background:#000;font:500 13px var(--ui);opacity:0;pointer-events:none;transition:opacity .25s,transform .25s;white-space:nowrap}
+.toast.in{opacity:1;transform:translate(-50%,0)}
+@media (max-width:640px){
+ .hud{padding-left:12px;padding-right:12px}
+ #chartLink{display:none}
+ .bw{font-size:16px}
+ .row{grid-template-columns:62px minmax(0,1fr) 38px;gap:8px}
+ .row .n{display:none}
+ .buy{padding:0 12px;font-size:12px}
+}
+@media (prefers-reduced-motion:reduce){*{animation:none!important;transition:none!important;scroll-behavior:auto!important}}
+</style>
+</head>
+<body>
+<h1 class="sr">404 ($404) on Solana. The page you are looking for does not exist. The coin does.</h1>
+<header class="hud" id="hud">
+  <a class="brand" href="#top" aria-label="404">
+    <img src="avatar.png" alt="" width="34" height="34"><span class="bw">404</span>
+  </a>
+  <nav class="acts" aria-label="links">
+    <a id="chartLink" class="ib" href="#" aria-label="chart"><svg viewBox="0 0 20 20" aria-hidden="true"><path d="M3 16h14M5 13l3.5-4 3 2.5L16 5" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="square"/></svg></a>
+    <a id="xLink" class="ib" href="#" aria-label="X"><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M17.8 3h3.1l-6.8 7.8L22 21h-6.2l-4.9-6.4L5.3 21H2.2l7.3-8.3L1.9 3h6.4l4.4 5.8L17.8 3Zm-1.1 16.2h1.7L7.4 4.7H5.6l11.1 14.5Z" fill="currentColor"/></svg></a>
+    <a id="buy" class="buy" href="#">buy <span data-ticker>$404</span></a>
+  </nav>
+</header>
+
+<main id="top">
+  <section class="hero" id="hero">
+    <canvas id="gl" aria-hidden="true"></canvas>
+    <canvas id="src" aria-hidden="true"></canvas>
+    <div class="hero-txt">
+      <p class="tagline">the page you're looking for doesn't exist.<br><b>the coin does.</b></p>
+      <p class="hint" id="hint">click anything. everything is missing.</p>
+    </div>
+    <a class="down" href="#log" aria-label="scroll to the access log">↓ /log</a>
+  </section>
+
+  <section class="log" id="log" aria-label="access log">
+    <div class="log-in">
+      <p class="log-h"><span class="dim">//</span> access log <span class="dim" id="clock">--:--:--</span></p>
+      <ul class="rows" id="rows"></ul>
+      <div class="foot">
+        <button id="caChip" class="chip" type="button" aria-label="copy contract address"><span class="k">CA</span><span id="caTxt">drops at launch</span></button>
+        <p class="fine">not financial advice. not found either.</p>
+      </div>
+    </div>
+  </section>
+</main>
+
+<div id="wins" class="wins" aria-hidden="true"></div>
+<div id="toast" class="toast" role="status" aria-live="polite" hidden></div>
+
+<script src="config.js"></script>
+<script>(() => {
+'use strict';
+const $ = (id) => document.getElementById(id);
+const cfg = window.F404_CFG || {};
+const CA = (cfg.CA || '').trim();
+const T = (cfg.TICKER || '404').replace(/^\$/, '');
+const buyUrl = CA ? (cfg.BUY || `https://pump.fun/coin/${CA}`) : '';
+const chartUrl = CA ? (cfg.CHART || `https://gmgn.ai/sol/token/${CA}`) : '';
+const xUrl = (cfg.X || '').trim();
+
+/* ---------- toast + links ---------- */
+const toastEl = $('toast'); let toastT = 0;
+function toast(msg) {
+  clearTimeout(toastT); toastEl.textContent = msg; toastEl.hidden = false;
+  toastEl.classList.remove('in'); void toastEl.offsetWidth; toastEl.classList.add('in');
+  toastT = setTimeout(() => { toastEl.classList.remove('in'); toastT = setTimeout(() => { toastEl.hidden = true; }, 300); }, 2200);
+}
+function link(el, url, later) {
+  if (!el) return;
+  if (url) { el.href = url; el.target = '_blank'; el.rel = 'noopener'; }
+  else { el.href = '#'; el.addEventListener('click', (e) => { e.preventDefault(); toast(later); }); }
+}
+link($('buy'), buyUrl, 'buying opens at launch.');
+link($('chartLink'), chartUrl, 'the chart goes live at launch.');
+link($('xLink'), xUrl, 'X drops at launch.');
+for (const el of document.querySelectorAll('[data-ticker]')) el.textContent = '$' + T;
+const caTxt = $('caTxt');
+if (CA) caTxt.textContent = CA.slice(0, 4) + '…' + CA.slice(-4);
+async function copyCA() {
+  if (!CA) { toast('CA drops at launch.'); return; }
+  try { await navigator.clipboard.writeText(CA); toast('CA copied.'); }
+  catch (e) { caTxt.textContent = CA; const r = document.createRange(); r.selectNodeContents(caTxt); const s = getSelection(); s.removeAllRanges(); s.addRange(r); toast('select + copy the CA.'); }
+}
+$('caChip').addEventListener('click', copyCA);
+
+/* ---------- access log ---------- */
+const rows = $('rows');
+const LOG = [
+  ['/roadmap', 404, 'not found'], ['/utility', 404, 'not found'], ['/whitepaper', 404, 'not found'],
+  ['/team', 404, "we're lost too"], ['/plan', 404, 'not found'], ['/sleep', 404, 'not found'],
+  ['/exit', 404, 'not found'],
+  ['/buy', 200, 'ok', 'buy'], ['/chart', 200, 'ok', 'chart'], ['/x', 200, 'ok', 'x'], ['/ca', 200, 'ok', 'ca'],
+];
+const pad2 = (n) => String(n).padStart(2, '0');
+function stamp(d) { return `${pad2(d.getHours())}:${pad2(d.getMinutes())}:${pad2(d.getSeconds())}`; }
+const base = Date.now();
+LOG.forEach(([path, st, note, kind], i) => {
+  const ok = st === 200;
+  const el = document.createElement(ok ? 'a' : 'li');
+  el.className = 'row ' + (ok ? 'o' : 'e');
+  const when = new Date(base - (LOG.length - i) * 1000);
+  el.innerHTML = `<span class="t">${stamp(when)}</span><span class="p">GET <b>${path}</b></span><span class="s">${st}</span><span class="n">${note}</span>`;
+  if (ok) {
+    if (kind === 'buy') link(el, buyUrl, 'buying opens at launch.');
+    else if (kind === 'chart') link(el, chartUrl, 'the chart goes live at launch.');
+    else if (kind === 'x') link(el, xUrl, 'X drops at launch.');
+    else { el.href = '#'; el.addEventListener('click', (e) => { e.preventDefault(); copyCA(); }); }
+    el.setAttribute('role', 'link');
+    const wrap = document.createElement('li'); wrap.appendChild(el); wrap.style.listStyle = 'none'; rows.appendChild(wrap);
+  } else rows.appendChild(el);
+});
+const rowEls = [...rows.querySelectorAll('.row')];
+if ('IntersectionObserver' in window) {
+  const io = new IntersectionObserver((es) => {
+    for (const e of es) if (e.isIntersecting) {
+      const i = rowEls.indexOf(e.target);
+      setTimeout(() => e.target.classList.add('in'), (i % 6) * 70);
+      io.unobserve(e.target);
+    }
+  }, { threshold: .2 });
+  rowEls.forEach((r) => io.observe(r));
+} else rowEls.forEach((r) => r.classList.add('in'));
+setInterval(() => { $('clock').textContent = stamp(new Date()); }, 1000);
+$('clock').textContent = stamp(new Date());
+
+/* ---------- error windows ---------- */
+const wins = $('wins');
+const MSG = [
+  ['page not found.', ''], ['roadmap not found.', 'looked everywhere'], ['utility not found.', ''],
+  ['whitepaper not found.', 'try /whitepaper.pdf'], ["team not found.", "we're lost too"],
+  ['plan not found.', ''], ['sleep not found.', 'last seen: october'], ['your exit not found.', 'checked the pockets'],
+  ['tokenomics not found.', ''], ['patience not found.', ''],
+];
+const BYE = ['ok fine.', 'only /buy exists.'];
+let spawned = 0, live = [], z = 1;
+function closeWin(w) { const i = live.indexOf(w); if (i >= 0) live.splice(i, 1); w.remove(); }
+function spawn(x, y) {
+  if (spawned >= MSG.length) { collapse(); return; }
+  const [m, sub] = MSG[spawned++];
+  const w = document.createElement('div'); w.className = 'win'; w.style.zIndex = ++z;
+  w.innerHTML = `<div class="tb"><span>404.exe</span><button class="x" type="button" aria-label="close">×</button></div><div class="bd"><div class="ic">!</div><div class="msg">${m}${sub ? `<small>${sub}</small>` : ''}</div></div><button class="ok" type="button">OK</button>`;
+  wins.appendChild(w);
+  const W = w.offsetWidth || 280, H = w.offsetHeight || 120;
+  const vw = innerWidth, vh = innerHeight;
+  w.style.left = Math.max(8, Math.min(vw - W - 8, x - W / 2 + (Math.random() - .5) * 40)) + 'px';
+  w.style.top = Math.max(60, Math.min(vh - H - 8, y - H / 2 + (Math.random() - .5) * 40)) + 'px';
+  live.push(w);
+  if (live.length > 7) closeWin(live[0]);
+  w.querySelector('.x').addEventListener('click', (e) => { e.stopPropagation(); closeWin(w); });
+  w.querySelector('.ok').addEventListener('click', (e) => { e.stopPropagation(); closeWin(w); });
+  const tb = w.querySelector('.tb'); let dx = 0, dy = 0, drag = false;
+  tb.addEventListener('pointerdown', (e) => { if (e.target.closest('.x')) return; drag = true; w.style.zIndex = ++z; dx = e.clientX - w.offsetLeft; dy = e.clientY - w.offsetTop; tb.setPointerCapture(e.pointerId); tb.style.cursor = 'grabbing'; e.stopPropagation(); });
+  tb.addEventListener('pointermove', (e) => { if (!drag) return; w.style.left = (e.clientX - dx) + 'px'; w.style.top = (e.clientY - dy) + 'px'; });
+  const up = () => { drag = false; tb.style.cursor = ''; };
+  tb.addEventListener('pointerup', up); tb.addEventListener('pointercancel', up);
+  w.addEventListener('pointerdown', (e) => { w.style.zIndex = ++z; e.stopPropagation(); });
+  burst = 1;
+}
+function collapse() {
+  const cx = innerWidth / 2, cy = innerHeight / 2;
+  for (const w of live) {
+    w.classList.add('dying');
+    const r = w.getBoundingClientRect();
+    w.style.transform = `translate(${cx - r.left - r.width / 2}px,${cy - r.top - r.height / 2}px) scale(.2)`;
+  }
+  burst = 1.6;
+  setTimeout(() => { live.slice().forEach(closeWin); }, 520);
+  const [a, b] = BYE;
+  setTimeout(() => toast(a + ' ' + b), 540);
+  spawned = 0;
+}
+
+/* ---------- hero: 2D source -> WebGL glitch ---------- */
+const hero = $('hero'), gl = $('gl'), src = $('src'), sx = src.getContext('2d');
+let W = 0, H = 0, scale = Math.min(devicePixelRatio || 1, 1.5), burst = 0, autoBurst = 0, nextAuto = 1.2;
+let mx = .5, my = .5, hov = 0, px = 0, py = 0, tx = 0, ty = 0, lastInput = -99, t0 = performance.now();
+let GL = null, tex = null, uni = {}, glOk = false;
+
+function size() {
+  const w = hero.clientWidth, h = hero.clientHeight;
+  if (!w || !h) return false;
+  const nw = Math.round(w * scale), nh = Math.round(h * scale);
+  if (nw !== W || nh !== H) { W = src.width = gl.width = nw; H = src.height = gl.height = nh; if (GL) GL.viewport(0, 0, W, H); }
+  return true;
+}
+
+function drawSrc(t) {
+  const c = sx; c.fillStyle = '#000'; c.fillRect(0, 0, W, H);
+  const fs = Math.min(W * (W < 700 ? .44 : .36), H * .46);
+  c.font = `400 ${fs}px "Archivo Black",Impact,"Arial Black",sans-serif`;
+  c.textBaseline = 'alphabetic'; c.textAlign = 'left';
+  const w4 = c.measureText('4').width, w0 = c.measureText('0').width, w = w4 * 2 + w0;
+  const ox = px * W * .018, oy = py * H * .016;
+  const x0 = W / 2 - w / 2 + ox, baseY = H * .41 + fs * .36 + oy;
+  c.fillStyle = '#fff'; c.fillText('404', x0, baseY);
+  // tears from the two 4s
+  c.strokeStyle = '#fff'; c.lineCap = 'round'; c.lineWidth = Math.max(2, fs * .042);
+  [x0 + w4 * .24, x0 + w4 + w0 + w4 * .24].forEach((tx0, k) => {
+    const y0 = baseY - fs * .24, L = fs * (.46 + .14 * Math.sin(t * 1.4 + k * 2.1));
+    c.beginPath();
+    for (let i = 0; i <= 16; i++) { const f = i / 16, yy = y0 + f * L, xx = tx0 + Math.sin(f * 7 + t * 3 + k) * fs * .014 * f; i ? c.lineTo(xx, yy) : c.moveTo(xx, yy); }
+    c.stroke();
+  });
+  // sad frown under the zero
+  const cx = x0 + w4 + w0 / 2, r = fs * .17, cy = baseY + fs * .07 + r;
+  c.fillStyle = '#fff'; c.beginPath(); c.arc(cx + ox * .6, cy, r, 0, 7); c.fill();
+  c.strokeStyle = '#000'; c.lineWidth = Math.max(2, fs * .034);
+  c.beginPath(); c.arc(cx + ox * .6, cy + r * .42, r * .5, Math.PI * 1.14, Math.PI * 1.86); c.stroke();
+}
+
+const VS = 'attribute vec2 p;varying vec2 v;void main(){v=p*.5+.5;gl_Position=vec4(p,0.,1.);}';
+const FS = `precision mediump float;varying vec2 v;uniform sampler2D t;uniform vec2 res;uniform vec2 m;uniform float time,burst,hov;
+float h(float n){return fract(sin(n*91.345)*47453.5453);}
+void main(){
+ vec2 uv=v;
+ float near=exp(-pow((uv.y-m.y)*6.0,2.0))*hov;
+ float g=clamp(burst+near*.55,0.,2.);
+ float row=floor(uv.y*46.0);
+ float tk=floor(time*14.0);
+ float gate=step(.58,h(row+tk*3.1));
+ float off=(h(row*1.7+tk)-.5)*.14*g*gate;
+ vec2 u=uv+vec2(off,0.);
+ float ca=.0016+.011*g;
+ float r=texture2D(t,u+vec2(ca,0.)).r,gg=texture2D(t,u).g,b=texture2D(t,u-vec2(ca,0.)).b;
+ vec3 c=vec3(r,gg,b);
+ float band=smoothstep(.0,.05,fract(uv.y*.8-time*.06))*(1.-smoothstep(.05,.1,fract(uv.y*.8-time*.06)));
+ c+=band*.05;
+ c*=.93+.07*sin(uv.y*res.y*1.4+time*2.);
+ c+=(h(uv.x*res.x+uv.y*res.y*7.+time)-.5)*.07;
+ float vg=smoothstep(1.15,.35,length((uv-.5)*vec2(1.,.9)));
+ gl_FragColor=vec4(c*mix(.55,1.,vg),1.);
+}`;
+
+function initGL() {
+  try {
+    GL = gl.getContext('webgl', { antialias: false, alpha: false, powerPreference: 'low-power' });
+    if (!GL) return false;
+    const mk = (type, s) => { const o = GL.createShader(type); GL.shaderSource(o, s); GL.compileShader(o); if (!GL.getShaderParameter(o, GL.COMPILE_STATUS)) throw new Error(GL.getShaderInfoLog(o)); return o; };
+    const pr = GL.createProgram(); GL.attachShader(pr, mk(GL.VERTEX_SHADER, VS)); GL.attachShader(pr, mk(GL.FRAGMENT_SHADER, FS)); GL.linkProgram(pr);
+    if (!GL.getProgramParameter(pr, GL.LINK_STATUS)) throw new Error('link');
+    GL.useProgram(pr);
+    const buf = GL.createBuffer(); GL.bindBuffer(GL.ARRAY_BUFFER, buf);
+    GL.bufferData(GL.ARRAY_BUFFER, new Float32Array([-1, -1, 3, -1, -1, 3]), GL.STATIC_DRAW);
+    const loc = GL.getAttribLocation(pr, 'p'); GL.enableVertexAttribArray(loc); GL.vertexAttribPointer(loc, 2, GL.FLOAT, false, 0, 0);
+    tex = GL.createTexture(); GL.bindTexture(GL.TEXTURE_2D, tex);
+    GL.pixelStorei(GL.UNPACK_FLIP_Y_WEBGL, true);
+    GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_MIN_FILTER, GL.LINEAR); GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_MAG_FILTER, GL.LINEAR);
+    GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_WRAP_S, GL.CLAMP_TO_EDGE); GL.texParameteri(GL.TEXTURE_2D, GL.TEXTURE_WRAP_T, GL.CLAMP_TO_EDGE);
+    for (const n of ['res', 'm', 'time', 'burst', 'hov']) uni[n] = GL.getUniformLocation(pr, n);
+    GL.uniform1i(GL.getUniformLocation(pr, 't'), 0);
+    gl.addEventListener('webglcontextlost', (e) => { e.preventDefault(); glOk = false; document.body.classList.add('nogl'); });
+    return true;
+  } catch (e) { console.warn('gl off', e); return false; }
+}
+
+let last = performance.now(), slow = 0, frames = 0, started = false;
+function frame(now) {
+  requestAnimationFrame(frame);
+  const dt = Math.min(.1, (now - last) / 1000); last = now;
+  if (!size()) return;
+  const t = (now - t0) / 1000;
+  // idle wander
+  const idle = t - lastInput > 5;
+  if (idle) { tx = Math.sin(t * .5) * 1.2; ty = Math.sin(t * .37 + 1) * .8; }
+  px += (tx - px) * Math.min(1, dt * 4); py += (ty - py) * Math.min(1, dt * 4);
+  // bursts
+  nextAuto -= dt; if (nextAuto <= 0) { autoBurst = .55 + Math.random() * .4; nextAuto = 2 + Math.random() * 3.5; }
+  autoBurst = Math.max(0, autoBurst - dt * 5); burst = Math.max(0, burst - dt * 2.4);
+  hov += (((t - lastInput) < 1.2 ? 1 : 0) - hov) * Math.min(1, dt * 6);
+  drawSrc(t);
+  if (glOk) {
+    GL.bindTexture(GL.TEXTURE_2D, tex);
+    GL.texImage2D(GL.TEXTURE_2D, 0, GL.RGBA, GL.RGBA, GL.UNSIGNED_BYTE, src);
+    GL.uniform2f(uni.res, W, H); GL.uniform2f(uni.m, mx, my); GL.uniform1f(uni.time, t);
+    GL.uniform1f(uni.burst, Math.max(burst, autoBurst)); GL.uniform1f(uni.hov, hov);
+    GL.drawArrays(GL.TRIANGLES, 0, 3);
+  }
+  frames++;
+  if (!started) { started = true; document.body.classList.add('ready'); }
+  // degrade
+  if (dt > .034) slow++; else slow = Math.max(0, slow - 1);
+  if (slow > 50 && scale > .6) { scale = Math.max(.6, scale * .8); slow = 0; }
+}
+
+function input(e) {
+  const r = hero.getBoundingClientRect();
+  const cx = (e.clientX ?? 0) - r.left, cy = (e.clientY ?? 0) - r.top;
+  mx = Math.min(1, Math.max(0, cx / r.width)); my = 1 - Math.min(1, Math.max(0, cy / r.height));
+  tx = (mx - .5) * 2; ty = -(my - .5) * 2;
+  lastInput = (performance.now() - t0) / 1000;
+}
+hero.addEventListener('pointermove', input, { passive: true });
+hero.addEventListener('pointerdown', (e) => {
+  if (e.target.closest('a,button,.win')) return;
+  input(e); spawn(e.clientX, e.clientY);
+});
+// first win on load shortly after the page settles, like a real browser error
+function boot() {
+  glOk = initGL();
+  if (!glOk) document.body.classList.add('nogl');
+  size();
+  requestAnimationFrame(() => requestAnimationFrame(frame));
+  setTimeout(() => { if (!started) { document.body.classList.add('nogl'); glOk = false; requestAnimationFrame(frame); } }, 3000);
+}
+if (document.fonts && document.fonts.load) {
+  Promise.race([document.fonts.load('400 100px "Archivo Black"'), new Promise((r) => setTimeout(r, 1500))]).then(() => setTimeout(boot, 0), () => setTimeout(boot, 0));
+} else boot();
+window.__f404 = { spawn, collapse, get live() { return live.length; }, get glOk() { return glOk; }, get frames() { return frames; } };
+})();
+</script>
+</body>
+</html>
